@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> List of our Customers</h1>
+
+        <div data-bind="foreach : customers">
+
+            <div class="customer">
+                customer name : <span data-bind="text: custName"></span>
+                <img width="400px" data-bind="attr:{src : custImage}" />
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/knockout.js"></script>
+    <script type="text/javascript" src="../viewModle/customerVm.js"></script>
+</body>
+
+</html>
